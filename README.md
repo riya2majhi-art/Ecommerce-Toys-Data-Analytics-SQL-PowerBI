@@ -2,23 +2,19 @@
 
 An end-to-end data analytics project examining sales performance, customer sessions, and product order trends for an e-commerce toy retailer. Built using **SQL** for data cleaning and transformation, and **Power BI** for interactive visualization.
 
----
+## 📂 Project Structure
 
-📂 Project Structure
+```text
+.
 ├── 📁 SQL
-│   └── 01_Data_Cleaning.sql
-│
+│   └── 01_Data_Cleaning.sql        # Data cleaning and analysis scripts
 ├── 📁 Images
-│   └── dashboard_overview.png
-│
+│   └── dashboard_overview.png      # Power BI dashboard screenshots
 ├── 📁 Documentation
-│   └── Project_Documentation.pdf
-│
+│   └── Project_Documentation.pdf   # In-depth project documentation
 ├── 📁 Presentation
-│   └── Project_Presentation.pptx
-│
-└── README.md
-📊 Dashboard Overview
+│   └── Project_Presentation.pptx   # Executive summary slide deck
+└── README.md                       # Project overview and documentation
 
 The Power BI dashboard provides an interactive analysis of the E-Commerce Toys business across multiple areas:
 
