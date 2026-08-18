@@ -129,21 +129,10 @@ Resource	Location
 
 Riya Majhi
 
-Aspiring Data Analyst | MIS Executive
+Data Analyst
 
 Skills
 
 SQL • Power BI • DAX • Advanced Excel • Python • Tableau
 
 ⭐ Thank you for exploring this project!
-
-Order Trends: Discovered peak ordering windows and average order values (AOV) per region.
-
-📥 How to Access Files
-SQL Queries: Navigate to the SQL/ directory to view data cleaning and exploratory scripts.
-
-Power BI Dashboard: Due to GitHub's file size limit, the full 62 MB .pbix file is hosted on Google Drive.
-
-
-👤 Author
-Name: Riya Majhi
