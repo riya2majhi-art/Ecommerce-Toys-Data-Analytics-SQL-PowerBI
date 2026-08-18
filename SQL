@@ -1,0 +1,68 @@
+use riya
+
+--check for duplicates
+--orders
+SELECT 
+    order_id,
+    COUNT(*) AS duplicate_count
+FROM [dbo].[orders (1)]
+GROUP BY order_id
+HAVING COUNT(*) > 1;
+
+--website_sessions
+
+SELECT 
+    website_session_id,
+    COUNT(*) AS duplicate_count
+FROM website_sessions
+GROUP BY website_session_id
+HAVING COUNT(*) > 1;
+
+
+--Order Items
+
+SELECT 
+    order_item_id,
+    COUNT(*) AS duplicate_count
+FROM order_items
+GROUP BY order_item_id
+HAVING COUNT(*) > 1;
+
+
+--Handle missing values in website_sessions
+
+
+SELECT
+    SUM(CASE WHEN utm_source IS NULL THEN 1 ELSE 0 END) AS missing_utm_source,
+    SUM(CASE WHEN utm_campaign IS NULL THEN 1 ELSE 0 END) AS missing_utm_campaign,
+    SUM(CASE WHEN utm_content IS NULL THEN 1 ELSE 0 END) AS missing_utm_content,
+    SUM(CASE WHEN http_referer IS NULL THEN 1 ELSE 0 END) AS missing_http_referer
+FROM website_sessions;
+
+
+UPDATE website_sessions
+SET 
+    utm_source = COALESCE(utm_source, 'Direct / Unknown'),
+    utm_campaign = COALESCE(utm_campaign, 'No Campaign'),
+    utm_content = COALESCE(utm_content, 'No Ad Content'),
+    http_referer = COALESCE(http_referer, 'Direct / Unknown');
+
+
+--Standardize text columns
+
+
+UPDATE website_sessions
+SET
+    utm_source = TRIM(LOWER(utm_source)),
+    utm_campaign = TRIM(LOWER(utm_campaign)),
+    utm_content = TRIM(LOWER(utm_content)),
+    device_type = TRIM(LOWER(device_type)),
+    http_referer = TRIM(LOWER(http_referer));
+
+
+
+UPDATE [dbo].[products (1)]
+SET product_name = TRIM(product_name);
+
+UPDATE website_pageviews
+SET pageview_url = TRIM(LOWER(pageview_url));
