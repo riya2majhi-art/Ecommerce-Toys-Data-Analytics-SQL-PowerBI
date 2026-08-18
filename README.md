@@ -4,35 +4,142 @@ An end-to-end data analytics project examining sales performance, customer sessi
 
 ---
 
-## 📁 Repository Structure
-
-```text
+📂 Project Structure
 ├── 📁 SQL
-│   └── 01_Data_Cleaning.sql          # Data cleaning & validation queries
-├── 📁 PowerBI
-│   └── README.md                     # Link to download large .pbix file (62 MB)
-├── 📁 Documentation
-│   └── Project_Documentation.pdf     # In-depth analysis report
-├── 📁 Presentation
-│   └── Project_Presentation.pptx     # Executive summary presentation
-├── 📁 Dataset
-│   └── E_COMMERCE_TOYS.csv           # Raw dataset
+│   └── 01_Data_Cleaning.sql
+│
 ├── 📁 Images
-│   └── dashboard_overview.png        # Screenshots for quick preview
-└── README.md                         # Main repository documentation
-
+│   └── dashboard_overview.png
+│
+├── 📁 Documentation
+│   └── Project_Documentation.pdf
+│
+├── 📁 Presentation
+│   └── Project_Presentation.pptx
+│
+└── README.md
 📊 Dashboard Overview
+
+The Power BI dashboard provides an interactive analysis of the E-Commerce Toys business across multiple areas:
+
+📈 Executive Overview
+🎯 Strategic Takeaways
+🧸 Product Analysis
+👥 Customer Behaviour
+💳 Transaction Analytics
+📦 Inventory Analysis
+🌐 Website Session Analysis
+
+The dashboard was developed using Power BI, DAX, and data modeling to transform the cleaned data into meaningful business insights.
+
 🛠️ Tech Stack & Tools
-Database / Querying: SQL Server (Data Cleaning, Duplicate Checks)
 
-Visualization: Power BI (DAX, Interactive Dashboards, Data Modeling)
+Database / Querying:
+SQL Server — Data Cleaning, Validation, Duplicate Checks and Data Transformation
 
-Documentation & Slides: Microsoft PowerPoint, Word/PDF
+Visualization & Business Intelligence:
+Power BI — DAX, Data Modeling and Interactive Dashboards
+
+Documentation & Presentation:
+Microsoft Word / PDF, Microsoft PowerPoint
 
 🔍 Key Insights & Findings
-Sales Performance: Identified top-performing toy categories and revenue drivers across different quarters.
+📈 Sales Performance
 
-Conversion Rates: Analyzed website session data to pinpoint drops in the customer checkout funnel.
+Identified top-performing toy categories and major revenue drivers across different periods.
+
+🌐 Conversion Rates
+
+Analyzed website session data to identify potential drops in the customer checkout funnel.
+
+🛒 Order Trends
+
+Analyzed ordering patterns, peak ordering periods and average order value (AOV) across different regions.
+
+📦 Inventory
+
+Analyzed product inventory levels to identify stock-related trends and products requiring attention.
+
+👥 Customer Behaviour
+
+Analyzed customer purchasing patterns and their contribution to overall sales performance.
+
+🧹 SQL Data Cleaning
+
+SQL Server was used to clean and prepare the dataset before performing the Power BI analysis.
+
+The SQL work includes:
+
+Data validation
+Duplicate checks
+Missing value checks
+Data type validation
+Data cleaning and standardization
+Data transformation
+Preparing analysis-ready data
+
+📁 SQL scripts are available in the SQL/ folder.
+
+📥 How to Access Project Files
+💻 SQL Queries
+
+Navigate to the SQL/ directory to view the SQL data cleaning and validation script.
+
+📊 Power BI Dashboard
+
+The complete Power BI .pbix file is hosted on Google Drive due to its large file size.
+
+👉 Download the Power BI Dashboard (https://drive.google.com/drive/folders/1wQ5Qi5QMqJUyurRrF2MylsKW-Lel7rar?usp=sharing)
+
+🗃️ Raw Dataset
+
+The complete raw dataset is also hosted on Google Drive because the file exceeds GitHub's upload limit.
+
+👉 Access Raw Dataset(https://drive.google.com/drive/folders/1WhgC1R7YJpbixMeJFWjaKhphXe-mRN4N?usp=sharing)
+
+📄 Project Documentation
+
+The detailed project documentation is available in the:
+
+Documentation/
+
+folder.
+
+🎤 Project Presentation
+
+The executive project presentation is available in the:
+
+Presentation/
+
+folder.
+
+🖼️ Dashboard Preview
+
+A preview of the Power BI dashboard is available in the:
+
+Images/
+
+folder.
+
+📚 Project Resources
+Resource	Location
+💻 SQL Scripts	SQL/
+📊 Power BI Dashboard	Google Drive
+🗃️ Raw Dataset	Google Drive
+📄 Documentation	Documentation/
+🎤 Presentation	Presentation/
+🖼️ Dashboard Images	Images/
+👤 Author
+
+Riya Majhi
+
+Aspiring Data Analyst | MIS Executive
+
+Skills
+
+SQL • Power BI • DAX • Advanced Excel • Python • Tableau
+
+⭐ Thank you for exploring this project!
 
 Order Trends: Discovered peak ordering windows and average order values (AOV) per region.
 
@@ -41,7 +148,6 @@ SQL Queries: Navigate to the SQL/ directory to view data cleaning and explorator
 
 Power BI Dashboard: Due to GitHub's file size limit, the full 62 MB .pbix file is hosted on Google Drive.
 
-📥 Download the Power BI Dashboard (https://drive.google.com/drive/folders/1wQ5Qi5QMqJUyurRrF2MylsKW-Lel7rar?usp=sharing)
 
 👤 Author
 Name: Riya Majhi
